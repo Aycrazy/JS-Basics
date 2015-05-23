@@ -73,7 +73,9 @@ var makeCounter = function(){
 */
 
   //Code Here
-
+var rec = function (func){
+  return func +1;
+};
 
 
 //Next Problem
