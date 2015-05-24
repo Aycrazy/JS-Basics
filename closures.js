@@ -51,7 +51,6 @@ var makeCounter = function(){
     number +=1;
     return number;
   }
-    return count;
 }
 
   //Code Here
@@ -73,8 +72,8 @@ var makeCounter = function(){
 */
 
   //Code Here
-var rec = function (func){
-  return func +1;
+var rec = function (func()){
+  return func() +1;
 };
 
 
