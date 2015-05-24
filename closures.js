@@ -72,10 +72,11 @@ var makeCounter = function(){
 */
 
   //Code Here
-var rec = function (func()){
+var rec = function (funct{
   var N = 1;
   while(N < 1){
     N += 1;
+    return N;
   }
   return func();
 };
@@ -89,7 +90,7 @@ var rec = function (func()){
   Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
 */
 
-var fnCounter = function (func(), N){
+var fnCounter = function (funct, N){
   for(i=0; i < N; i++){
     func();
   }
@@ -112,24 +113,40 @@ var fnCounter = function (func(), N){
   Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
 
     //Answer Here
-
+This function will invoke a for loop starting at 1 and running until it hits 5. It will also invoke another function that prints the current number of the variable times 1000 to give the user a number of milliseconds.
 
   Now, run the function in your console and note what happpens.
+
+counter();
 
   Was your answer right or wrong?
 
     //Answer Here
 
-
+wrong
   Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc)
 */
 
-    //Code Here
+   var counter = function(){
+    for (var i=1000; i<=5000; i=+1000) {
+      setTimeout( function timer(){
+          console.log( i/1000 );
+      }, i);
+    }
+  };
 
 
 
 //Next Problem
 
+var funcArray = new Array();
+for (var i = 0; i <= 5; i++) {
+  funcArray[i] = new Array();
+}
+
+funcArray[0][0] = function (){
+  console.log(multiArray[i])
+};
 
 
 /*
