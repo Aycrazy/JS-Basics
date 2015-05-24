@@ -145,7 +145,7 @@ for (var i = 0; i <= 5; i++) {
 }
 
 funcArray[0][0] = function (){
-  console.log(multiArray[i])
+  console.log(funcArray[i])
 };
 
 
